@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    transition: .2s;
 }
 
 body {
@@ -249,17 +250,53 @@ section.testimonials {
         margin: 20px 0;
     }
 
+    .reviews {
+        display: flex;
+    }
+
     & .review {
         text-align: left;
+        border: 1.5px solid #ddd;
+        border-radius: 15px;
+        min-width: 380px;
+        width: 380px;
+        padding: 20px;
+        margin: 10px;
         & .user-area {
             display: flex;
             justify-content: space-between;
             & .user {
                 display: flex;
+                & .username {
+                    padding: 0 15px;
+                }
             }
             & .evaluation {
                 display: flex;
                 align-items: center;
+            }
+        }
+        &:hover {
+            border: 1.5px solid #F53838;
+        }
+    }
+
+
+    .reviews-btn-area {
+        text-align: end;
+        & button {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: 1.5px solid #F53838;
+            border-radius: 50%;
+            &:hover { 
+                background-color: #F53838;
+                & svg {
+                    & path {
+                        fill: #fff;
+                    }
+                }
             }
         }
     }
