@@ -300,5 +300,49 @@ section.testimonials {
             }
         }
     }
+    padding-bottom: 200px;
+    position: relative;
+}
 
+
+section.subscribe {
+    & .card {
+        bottom: -200px;
+        background-color: #fff;
+        position: absolute;
+        width: calc(100vw - 175px);
+        display: flex;
+        align-items: center;
+        border: none;
+        justify-content: space-between;
+        box-shadow: 0 10px 25px #0002;
+        & button {
+            background-color: #F53838;
+            border: none;
+            border-radius: 15px;
+            height: min-content;
+            text-align: center;
+            min-width: 180px;
+            width: 250px;
+            box-shadow: 0 10px 20px #F5383855;
+            & p {
+                color: #fff;
+                font-family: 'Rubik';
+            }
+        }
+
+        & .txt {
+            text-align: left;
+            & p {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+
+footer {
+    padding-top: 250px;
+    background-color: #f00;
+    background-image: linear-gradient(to left, #fff, #eee, #fff);
 }
