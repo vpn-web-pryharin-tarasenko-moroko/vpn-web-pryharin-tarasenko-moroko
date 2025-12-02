@@ -393,3 +393,152 @@ footer {
 
     background-image: linear-gradient(to left, #fff, #eee, #fff);
 }
+
+section.testimonials .reviews {
+    overflow-x: auto; 
+    padding-bottom: 20px;
+}
+
+/*  МЕДІАЗАПИТИ  */
+
+@media screen and (max-width: 992px) {
+    body {
+        margin: 20px;
+    }
+    section.hero img {
+        width: 45%;
+    }
+    
+    section.hero h2 {
+        font-size: 30px; 
+    }
+
+    section.pricing .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    header nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    header nav a {
+        margin: 5px;
+    }
+    header div {
+        margin-top: 10px;
+    }
+    section.hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    section.hero img {
+        width: 80%;
+        margin-top: 30px;
+        order: -1;
+    }
+
+    section.hero button {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 300px;
+    }
+    section.stats {
+        margin-top: 50px;
+    }
+
+    section.stats ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    section.stats li {
+        width: 100%;
+        justify-content: center;
+    }
+
+    section.stats li .line {
+        display: none;
+    }
+    section.features {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    section.features img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    section.features div {
+        margin: 0 10px;
+    }
+
+    section.pricing .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    section.testimonials .reviews {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    
+    section.testimonials .review {
+        min-width: 85vw;
+        margin-right: 15px;
+    }
+
+    section.subscribe .card {
+        position: relative;
+        bottom: auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        margin-bottom: -50px;
+        box-sizing: border-box;
+    }
+
+    section.subscribe .card .txt {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-top: 100px;
+        text-align: left;
+        gap: 40px;
+    }
+
+    footer .footer-info {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    footer > div {
+        margin: 0;
+    }
+}
