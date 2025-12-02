@@ -342,7 +342,54 @@ section.subscribe {
 
 
 footer {
+    display: flex;
+    justify-content: space-between;
     padding-top: 250px;
     background-color: #f00;
+    & p {
+        margin: 10px 0;
+    }
+    & img {
+        max-width: 150px;
+        width: 100%;
+    }
+    & div {
+        margin: 0 15px;
+        & p {
+            max-width: 250px;
+        }
+    }
+    & .footer-info {
+        display: flex;
+        justify-content: space-between;
+        min-width: 300px;
+        width: 50%;
+    }
+
+    & .a-logo {
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 5px 10px #0004;
+        text-decoration: none;
+        & i {
+            color:#F53838;
+        }
+    }
+
+    & .logo-footer {
+        & div {
+            display: flex;
+            justify-content: left;
+        }
+    }
+
+    padding-bottom: 40px;
+
     background-image: linear-gradient(to left, #fff, #eee, #fff);
 }
